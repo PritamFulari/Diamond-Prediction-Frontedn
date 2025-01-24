@@ -54,12 +54,12 @@ html {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 /* Navbar Styles */
+/* Navbar Styles */
 .navbar {
   background-color: #645cff;
   padding: 1rem;
   display: flex;
-  justify-content: space-between; /* Ensures that the logo and links are spaced apart */
-  align-items: center;
+  align-items: center; /* Aligns both icon and text vertically */
   color: white;
   position: sticky;
   top: 0;
@@ -68,16 +68,25 @@ html {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
 }
 
+/* Navbar Title and Icon */
 .navbar h5 {
   margin: 0;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center; /* Ensures the icon and text are vertically centered */
 }
 
+.navbar i.fas.fa-gem {
+  margin-right: 0.5rem; /* Adds space between the diamond icon and the text */
+  font-size: 1.8rem; /* Adjusts the icon size */
+}
+
+/* Navbar Links Container */
 .nav-links {
   display: flex;
   justify-content: flex-start; /* Aligns the links to the left */
   gap: 1rem; /* Adds space between the links */
-  margin-right: 1rem; /* Adds space from the right edge of the screen */
+  margin-left: auto; /* Pushes the links to the right */
 }
 
 /* Navbar Link Styles */
@@ -97,6 +106,7 @@ html {
 .nav-links a:last-child {
   margin-right: 1rem; /* Adds a little extra space to the last link */
 }
+
 
 /* Hero Section */
 /*   */
